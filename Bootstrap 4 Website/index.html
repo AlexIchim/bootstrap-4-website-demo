@@ -27,6 +27,10 @@
             color: white;
         }
 
+        #sidemenu {
+            padding: 4em 0;
+        }
+
         .htop {
             position: relative;
             margin-top: 50px;
@@ -237,9 +241,10 @@
             </div>
         </div>
     </section>
-    <aside>
+    <aside id="sidemenu">
         <div class="container text-xs-center">
-            Add your email to the list to get the best deals first. <button class="btn btn-primary">Add Email</button>
+            <h2>Add your email to the list to get the best deals first.</h2>
+            <button type="button" class="btn btn-priamry btn-lg" data-toggle="modal" data-target="#modal2">More info</button>
         </div>
     </aside>
 
@@ -282,6 +287,18 @@
 
     <!-- Modal popups -->
     <div id="modal1" class="modal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">Best Deal OFFER Ever</div>
+                <div class="modal-body">Don't miss out buy now ! Save Big !</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">Best Deal OFFER Ever</div>
