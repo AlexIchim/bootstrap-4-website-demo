@@ -27,6 +27,12 @@
             font-size: 1em;
             padding: 3em;
         }
+
+        .footerA{
+            height: 200px;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
     <meta> </head>
 </head>
@@ -190,10 +196,39 @@
     </aside>
 
     <section id="contact">
-        <div></div>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="uname" class="control-label col-md-4">UserName</label>
+                        <div class="col-md-8">
+                            <input name="uname" id="uname" placeholder="Please enter your name" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="uemail" class="control-label col-md-4">Email</label>
+                        <div class="col-md-8">
+                            <input name="uemail" id="uemail" placeholder="Please enter your email address" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="umessage" class="control-label col-md-4">Message</label>
+                        <div class="col-md-8">
+                            <textarea name="umessage" id="umessage" placeholder="Please enter your message" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </section>
 
-    <footer>
+    <footer class="text-xs-center footerA">
        (c) copyright bla bla
     </footer>
 
