@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#mainNav{
+    background-color: black;
+}
+
+.htop div, #about .container, #contact .container{
+    bacgkround-color: rgb(0,0,0) transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+}
+
+#sidemenu {
+    padding: 2em;
+}
+
+#sidemenu .container {
+    padding: 4em 0;
+}
+.htop {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    min-height: auto;
+    background-image: url(http://lorempixel.com/1600/700/sports);
+    background-size: cover;
+    color: white;
+    font-size: 1em;
+    padding: 3em;
+}
+
+#about {
+    background-image: url(http://lorempixel.com/1600/700/cats);
+    background-size: cover;
+}
+
+#contact {
+    background-image: url(http://lorempixel.com/1600/700/city);
+    background-size: cover;
+}
+
+
+.footerA{
+    height: 200px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .htop {
+        min-height: 100%;
+    }
+
+    .msection {
+        min-height: 100%;
+        padding: 6em 0; /* 6 for top and bottom and 0 for right and left*/
+    }
+}
