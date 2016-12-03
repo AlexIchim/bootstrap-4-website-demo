@@ -20,10 +20,11 @@
             background-color: black;
         }
 
-        .htop div{
+        .htop div, #about .container, #contact .container{
             bacgkround-color: rgb(0,0,0) transparent;
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
+            color: white;
         }
 
         .htop {
@@ -38,6 +39,17 @@
             font-size: 1em;
             padding: 3em;
         }
+        
+        #about {
+            background-image: url(http://lorempixel.com/1600/700/cats);
+            background-size: cover;
+        }
+
+        #contact {
+            background-image: url(http://lorempixel.com/1600/700/city);
+            background-size: cover;
+        }
+        
 
         .footerA{
             height: 200px;
@@ -49,6 +61,11 @@
             .htop {
                 min-height: 100%;
             }
+
+            .msection {
+                min-height: 100%;
+                padding: 6em 0; /* 6 for top and bottom and 0 for right and left*/
+            }
         }
     </style>
     <meta> </head>
@@ -59,7 +76,7 @@
         <button class="navbar-toggler hidden-sm-up light float-xs-right" type="button" data-toggle="collapse" data-target="#minimenu"></button>
         <div id="minimenu" class="collapse navbar-toggleable-xs">
             <ul class="nav navbar-nav text-capitalize">
-                <li class="nav-item"><a class="nav-link" href="#absout">About</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a> </li>
                 <li class="nav-item"><a class="nav-link" href="#products">Products</a> </li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a> </li>
             </ul>
@@ -77,8 +94,15 @@
     </header>
 
     <!--SECTION ABOUT -->
-    <section id="about">
+    <section id="about" class="msection">
         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-3 text-xs-center">
                     <h3>One</h3>
@@ -96,11 +120,18 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!--SECTION PRODUCTS -->
-    <section id="products">
+    <section id="products" class="msection">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-xs-center">
@@ -212,7 +243,7 @@
         </div>
     </aside>
 
-    <section id="contact">
+    <section id="contact" class="msection">
         <div class="container">
             <form>
                 <fieldset>
