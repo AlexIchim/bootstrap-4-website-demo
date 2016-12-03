@@ -28,9 +28,12 @@
         }
 
         #sidemenu {
-            padding: 4em 0;
+            padding: 2em;
         }
 
+        #sidemenu .container {
+            padding: 4em 0;
+        }
         .htop {
             position: relative;
             margin-top: 50px;
@@ -74,7 +77,7 @@
     </style>
     <meta> </head>
 </head>
-<body>
+<body data-spy="scroll" data-target="#minimenu">
     <!-- CONTENT -->
     <nav id="mainNav" class="navbar navbar-full navbar-dark bg-faded navbar-fixed-top">
         <button class="navbar-toggler hidden-sm-up light float-xs-right" type="button" data-toggle="collapse" data-target="#minimenu"></button>
@@ -242,9 +245,9 @@
         </div>
     </section>
     <aside id="sidemenu">
-        <div class="container text-xs-center">
+        <div class="container text-xs-center bg-success text-white">
             <h2>Add your email to the list to get the best deals first.</h2>
-            <button type="button" class="btn btn-priamry btn-lg" data-toggle="modal" data-target="#modal2">More info</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal2">More info</button>
         </div>
     </aside>
 
@@ -281,7 +284,7 @@
         </div>
     </section>
 
-    <footer class="text-xs-center footerA">
+    <footer class="text-xs-center footerA bg-inverse text-white">
        (c) copyright bla bla
     </footer>
 
@@ -314,5 +317,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top}, 1000,
+                    function () {
+                        window.location.hash = hash;
+                    })
+            })
+        })
+    </script>
 </body>
 </html>
